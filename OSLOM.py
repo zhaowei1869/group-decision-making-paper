@@ -69,7 +69,7 @@ def create_tmpdir(theargs):
 
 def run_oslom(graph, theargs):
     """
-    :param outdir: the output directory to comprehend the output link file
+    :param outdir: the Output directory to comprehend the Output link file
     :param graph: input file
     :param directed: whether to treat input file as directed
     :param nosinglet: whether to merge singlets
@@ -133,7 +133,7 @@ def run_oslom(graph, theargs):
             sys.stderr.write('Output from cmd: ' + str(cmdout) + '\n')
 
         if len(cmderr) > 0:
-            sys.stderr.write('Error output from cmd: ' + str(cmderr) + '\n')
+            sys.stderr.write('Error Output from cmd: ' + str(cmderr) + '\n')
 
         outfolder = graph + '_oslo_files'
         clusts_layers = []
@@ -247,7 +247,7 @@ def main(args):
     :rtype: int
     """
     desc = """
-    Runs oslom on command line, sending output to standard out 
+    Runs oslom on command line, sending Output to standard out 
     """
 
     theargs = _parse_arguments(desc, args[1:])
